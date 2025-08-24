@@ -6,10 +6,48 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "addressToAmountFunded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "fund",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "funders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -53,12 +91,28 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FundMe.sol": {
-			"keccak256": "0xbf2e2b5841a4953e8823a7270e8fe829177666b8c41108c468da0238524db9cf",
+		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d0df9c566d770455346a11e4db569d37fb7c906b79eb17890dd128bc0479d60f",
-				"dweb:/ipfs/QmSEo4JFtVVFtonLSUSANfkkrA7XHLw5Knt9XzyiJDdMFw"
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"contracts/FundMe.sol": {
+			"keccak256": "0x290c346d5864cdce62c1f0334128a28f9f65e963422668be40356fc9097bba74",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5f166d9d47662d44b8179be2b9e7844780f423d4c24462badb133f2e638c1d56",
+				"dweb:/ipfs/QmUtmvPnDEMxQmump1wz8b5P32hDNPS8wvDy4SQ5eLbtWA"
+			]
+		},
+		"contracts/PriceConverter.sol": {
+			"keccak256": "0xd5853d38b222eeed7fedf79ea796467fc13968c31e14cdb840d47499ad3edbdd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9be79c29eda1c088f339915850bf7a2ff85d6cfcf91a097a378adb8955ebb4c3",
+				"dweb:/ipfs/QmP2DdyBRyXMwj4M1FuMK5ikAdSZf2fo3o5vEG2pBhDkxx"
 			]
 		}
 	},
